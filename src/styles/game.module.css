@@ -10,11 +10,11 @@
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
-    /* -moz-border-image: url('../public/frame.png') 26 26 27 27 repeat;
-  -webkit-border-image: url('/public/frame.png') 26 26 27 27 repeat;
-  -o-border-image: url('/public/frame.png') 26 26 27 27 repeat;
-    border-image: url('/public/frame.png') 26 26 27 27 fill repeat; */
-    border-image: url('../../public/frame.png') 93 92 87 92 stretch stretch; 
+    /* -moz-border-image: url('../../public/frame.png') 26 26 27 27 repeat;
+  -webkit-border-image: url('../../public/frame.png') 26 26 27 27 repeat;
+  -o-border-image: url('../../public/frame.png') 26 26 27 27 repeat;
+    border-image: url('../../public/frame.png') 26 26 27 27 fill repeat; */
+    border-image: url('/frame.png') 93 92 87 92 stretch stretch; 
     border-color: #f4be52;
     border-style: inset;
     border-width: 60px;
@@ -96,12 +96,14 @@
         cursor: pointer;
         margin-left: 50%;
         transform: translate(-50%);
-        height: 30px;
+        height: 50px;
         width: 100px;
         background-color: white;
-        border: 1px solid maroon;
+        border: gray;
         margin-bottom: 30px;
         transition: 0.3s ease-in-out;
+        border-style: inset;
+        border-width: 10px;
       }
       .guessButton:hover{
         scale: 1.1;
