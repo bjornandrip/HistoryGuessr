@@ -1,0 +1,116 @@
+.imageContainer{
+    padding-top: 30px;
+    margin: 0 auto;
+    width: 70vw;
+    height: auto;
+    /* border: 2px solid green; */
+    text-align: center;
+  }
+  .image{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-image: url('//s3-us-west-2.amazonaws.com/s.cdpn.io/4273/frame.png') 93 92 87 92 stretch stretch; 
+    border-color: #f4be52;
+    border-style: inset;
+    border-width: 60px;
+    display: block;
+    width: 40%;
+    height: auto;
+    background-color: #ffe;
+    margin: 0 auto;
+  }
+
+  .sliderContainer{
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    z-index: 30;
+    height: 150px;
+  }
+  .value{
+    font-size: xx-large;
+    padding-bottom: 20px;
+  }
+  .slider{
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 80%; /* Full-width */
+    height: 15px; /* Specified height */
+    background: #d3d3d3; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+    border-radius: 10px;
+    }
+    /* .slider:hover {
+        opacity: 1;
+      } */
+      
+      /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */ 
+      .slider::-webkit-slider-thumb {
+        -webkit-appearance: none; /* Override default look */
+        appearance: none;
+        width: 30px; /* Set a specific slider handle width */
+        height: 30px; /* Slider handle height */
+        background: maroon; /* Green background */
+        cursor: pointer; /* Cursor on hover */
+        border-radius: 15px;
+      }
+      
+      .slider::-moz-range-thumb {
+        width: 25px; /* Set a specific slider handle width */
+        height: 25px; /* Slider handle height */
+        background: #04AA6D; /* Green background */
+        cursor: pointer; /* Cursor on hover */
+      }
+      .ticksContainer{
+        position: relative;
+        margin: 0 auto;
+        width: 80%;
+        background-color: red;
+      }
+      .tickMark{
+        position: absolute;
+        display: inline-block;
+        height: 50px;
+        text-align: center;
+        /* transform: translate(-50%); */
+      }
+      .line {
+        width: 2px;
+        height: 15px;
+        background: black;
+        position: absolute;
+        top: -19px;
+        left: 0px;
+        z-index: -20;
+      }
+
+      .guessButton{
+        cursor: pointer;
+        margin-left: 50%;
+        transform: translate(-50%);
+        height: 30px;
+        width: 100px;
+        background-color: white;
+        border: 1px solid maroon;
+        margin-bottom: 30px;
+        transition: 0.3s ease-in-out;
+      }
+      .guessButton:hover{
+        scale: 1.1;
+        transform: translate(-45%);
+      }
+      .correctAnswer{
+        margin: 0 auto;
+        text-align: center;
+        font-size: x-large;
+        padding-bottom: 20px;
+      }
+      .correctAnswer h3{
+        margin: 0 auto;
+        text-align: center;
+        font-size: xx-large;
+      }
