@@ -10,7 +10,11 @@
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
-    border-image: url('//s3-us-west-2.amazonaws.com/s.cdpn.io/4273/frame.png') 93 92 87 92 stretch stretch; 
+    /* -moz-border-image: url('../public/frame.png') 26 26 27 27 repeat;
+  -webkit-border-image: url('/public/frame.png') 26 26 27 27 repeat;
+  -o-border-image: url('/public/frame.png') 26 26 27 27 repeat;
+    border-image: url('/public/frame.png') 26 26 27 27 fill repeat; */
+    border-image: url('../../public/frame.png') 93 92 87 92 stretch stretch; 
     border-color: #f4be52;
     border-style: inset;
     border-width: 60px;
