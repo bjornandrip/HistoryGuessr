@@ -14,7 +14,7 @@
   -webkit-border-image: url('../../public/frame.png') 26 26 27 27 repeat;
   -o-border-image: url('../../public/frame.png') 26 26 27 27 repeat;
     border-image: url('../../public/frame.png') 26 26 27 27 fill repeat; */
-    border-image: url('/frame.png') 93 92 87 92 stretch stretch; 
+    /* border-image: url('/frame.png') 93 92 87 92 stretch stretch;  */
     border-color: #f4be52;
     border-style: inset;
     border-width: 60px;
