@@ -2,7 +2,7 @@
 
 .overviewContainer{
     display: grid;
-    grid-template-rows: 0.2fr 0.2fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 0.2fr 1fr;
 }
 .overviewContainer h1{
     margin: 0 auto;
@@ -16,12 +16,19 @@
     text-align: center;
     font-size: 25px;
 }
+.scoresContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
 
 .overviewScore{
     padding-top: 20px;
     margin: 0 auto;
-    width: 20% ;
+    width: 80% ;
 }
 .overviewImage{
     max-width: 100%;
+    border: 3px solid white;
+    box-shadow: rgba(0, 0, 0, 0.3) 10px 10px 15px;
 }

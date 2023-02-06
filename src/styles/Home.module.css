@@ -36,3 +36,27 @@
   transform: rotate(-20deg);
   z-index: 1;
 }
+
+@media only screen and (max-width:767px) {
+  .Title{
+    padding-top: 10%;
+    font-size: 10vw;
+  }
+  .startGameTextContainer{
+    font-size: 5vw;
+  }
+  .imagesContainer{
+    margin: 0 auto;
+    padding-top: 20%;
+    text-align: center;
+    width: 80%;
+  }
+  .imagesContainer img{
+    margin: 0 auto;
+    display: block;
+    max-width: 70%;
+    border: 3px solid white;
+    box-shadow: rgba(0, 0, 0, 0.3) 10px 10px 15px;
+  }
+  
+}

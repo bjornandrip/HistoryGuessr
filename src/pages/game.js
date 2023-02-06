@@ -20,7 +20,8 @@ export default function Game() {
   const [yearsOf, setYearsOf] = useState(null)
   const [scoreThisRound, setScoreThisRound] = useState(null)
   const [scoreTotal, setScoreTotal] = useState([])
-  const [usedIndexes, setUsedIndixes] = useState([])
+  const [usedIndexes, setUsedIndexes] = useState([])
+  const [expandImage, setExpandImage] = useState(false)
   const sliderRef = useRef(null)
   let whileCounter = 0
 
@@ -35,9 +36,12 @@ export default function Game() {
     async function getData() {
       const res = await fetch('/data.json');
       const json = await res.json();
+      {json.ImageTesting && setIndex(Math.floor(Math.random()*json.ImageTesting.length))} //Make first image random
       setData(json.ImageTesting);
+      
     }
     getData();
+    
   }, []);
 
   function randIndex (){
@@ -96,8 +100,9 @@ export default function Game() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main >
+        <div className={styles.roundCounter}>Round: {currentRound}/5</div>
         <div className={styles.imageContainer}>
-          {data ?(<img className={styles.image} src={data[index].url} style={{borderImage: `url(${bg.src}) 93 92 87 92 stretch stretch`}}/>):<PulseLoader color="maroon" />}
+          {data ?(<img className={styles.image} src={data[index].url} onClick={()=>setExpandImage(true)} style={{borderImage: `url(${bg.src}) 93 92 87 92 stretch stretch`}}/>):<PulseLoader color="maroon" />}
         </div>
         <div className={styles.sliderContainer}>
           <h3 className={styles.value}>{valueSlider}</h3>
@@ -131,6 +136,7 @@ export default function Game() {
             (<button className={styles.guessButton} onClick={() => nextRound()}>Next Round</button>))
           :
           (<button className={styles.guessButton} onClick={() => makeGuess()} >Make Guess</button>)}
+          {expandImage ? (<div className={styles.overlay}><img className={styles.overlayImg} onClick={()=>setExpandImage(false)} src={data[index].url} alt="" /></div>):('')}
         
       </main>
     </>

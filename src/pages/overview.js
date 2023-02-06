@@ -3,6 +3,7 @@ import Link from 'next/link';
 import styles from '@/styles/overview.module.css'
 import OverviewScore from '@/components/OverviewScore';
 import { useRouter } from 'next/router';
+import Navbar from '@/components/Navbar';
 
 const Overview =()=>{
     const router = useRouter();
@@ -30,17 +31,14 @@ const Overview =()=>{
 
     return(
         <>
-            <nav>
-                <ul>
-                    <Link href='/'>Home</Link>
-                    <Link href='/game'>New game</Link>
-                </ul>
-            </nav>
+            <Navbar/>
             <div className={styles.overviewContainer}>
                 <h1>Overview</h1>
                 <h2>Your total score: {totalScore}/5000</h2>
+                <div className={styles.scoresContainer}>
                     {data && scoreIndex.map((item)=>
                         <OverviewScore data={data[item[0]]} score={item[1]}/>)}
+                </div>
             </div>
         </>
         

@@ -9,3 +9,21 @@ a{
   text-decoration: none;
   color: inherit;
 }
+
+nav ul{
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  justify-items: center;
+}
+
+nav ul a{
+  margin-left: 5%;
+  font-size: large;
+  transition: 3s;
+}
+nav ul a:hover{
+  text-decoration: underline;
+}

@@ -1,0 +1,13 @@
+
+.submitContainer{
+    text-align: center;
+    display: grid;
+    grid-template-rows: 0.5fr 0.5fr 1fr;
+}
+
+.submitContainer form{
+    margin: 0 auto;
+    width: 40%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
