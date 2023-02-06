@@ -8,10 +8,7 @@ import { PulseLoader } from 'react-spinners'
 // import Data from '@/components/Data'
 
 const ticks = [1820,1850,1880,1910,1940,1970,2000]
-const scoreTotal= []
-const usedIndexes = []
-const dataUsed = []
-let whileCounter = 0
+
 
 export default function Game() {
   const [data, setData] = useState(null);
@@ -22,6 +19,10 @@ export default function Game() {
   const [yearsOf, setYearsOf] = useState(null)
   const [scoreThisRound, setScoreThisRound] = useState(null)
   const sliderRef = useRef(null)
+  const usedIndexes = []
+  const dataUsed = []
+  let whileCounter = 0
+  const scoreTotal= []
 
 //Get the data from the JSON file
   useEffect(() => {
