@@ -37,7 +37,7 @@ const Overview =()=>{
                 <h2>Your total score: {totalScore}/5000</h2>
                 <div className={styles.scoresContainer}>
                     {data && scoreIndex.map((item)=>
-                        <OverviewScore data={data[item[0]]} score={item[1]}/>)}
+                        <OverviewScore onClick={()=>setExpandImage(true)} data={data[item[0]]} score={item[1]}/>)}
                 </div>
             </div>
         </>
