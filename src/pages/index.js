@@ -42,9 +42,10 @@ export default function Home() {
         </div>
         {data !== null ? 
           <div className={styles.imagesContainer}>
-            <img src={data[0].url} alt="" />
-            <img src={data[1].url} alt="" />
-            <img src={data[2].url} alt="" />
+            {console.log('her', Math.floor(Math.random()*data.length))}
+            <img src={data[Math.floor(Math.random()*data.length)].url} alt="" />
+            <img src={data[Math.floor(Math.random()*data.length)].url} alt="" />
+            <img src={data[Math.floor(Math.random()*data.length)].url} alt="" />
           </div>
         : 
           <div>No Images found</div>

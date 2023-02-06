@@ -41,7 +41,68 @@
             "city": "Kumamoto",
             "year": 1927,
             "url": "https://calisphere.org/clip/500x500/00b7f71e1b5422e0ede140091f9ea3eb"
+           },
+           {
+            "country": "USA",
+            "city": "Washington DC",
+            "year": 1957,
+            "url": "https://cdn.historycollection.com/wp-content/uploads/2018/08/Allan-Weaver-and-Maurice-Cullinane-listverse.com_.jpg"
+           },
+           {
+            "country": "South America",
+            "city": "South America",
+            "year": 1950,
+            "url": "https://collections.lib.uwm.edu/digital/api/singleitem/image/ags_south/11529/default.jpg"
+           },
+           {
+            "country": "Egypt",
+            "city": "Abu Sunbul",
+            "year": 1988,
+            "url": "https://collections.lib.uwm.edu/digital/api/singleitem/image/agsafrica/1004/default.jpg"
+           },
+           {
+            "country": "Iran",
+            "city": "Abadan",
+            "year": 1973,
+            "url": "https://collections.lib.uwm.edu/digital/api/singleitem/image/agsphoto/355/default.jpg"
+           },
+           {
+            "country": "Iran",
+            "city": "Abadan",
+            "year": 1928,
+            "url": "https://collections.lib.uwm.edu/digital/api/singleitem/image/agsphoto/21230/default.jpg"
+           },
+           {
+            "country": "Iran",
+            "city": "Abadan",
+            "year": 1973,
+            "url": "https://collections.lib.uwm.edu/digital/api/singleitem/image/agsphoto/361/default.jpg"
+           },
+           {
+            "country": "Iran",
+            "city": "Abadeh",
+            "year": 1933,
+            "url": "https://collections.lib.uwm.edu/digital/api/singleitem/image/agsphoto/21996/default.jpg"
+           },
+           {
+            "country": "Afghanistan",
+            "city": "",
+            "year": 1968,
+            "url": "https://collections.lib.uwm.edu/digital/api/singleitem/image/agsphoto/39045/default.jpg"
+           },
+           {
+            "country": "Afghanistan",
+            "city": "",
+            "year": 1968,
+            "url": "https://collections.lib.uwm.edu/digital/api/singleitem/image/agsphoto/39043/default.jpg"
+           },
+           {
+            "country": "Afghanistan",
+            "city": "Ritimir Pass",
+            "year": 1936,
+            "url": "https://collections.lib.uwm.edu/digital/api/singleitem/image/agsphoto/19264/default.jpg"
            }
+
 
     ]
 }

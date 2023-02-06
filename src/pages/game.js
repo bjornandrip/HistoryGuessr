@@ -4,6 +4,7 @@ import Link from 'next/link'
 import React, {useState, useEffect, useRef} from 'react'
 import styles from '@/styles/game.module.css'
 import bg from '../../public/frame.png'
+import { PulseLoader } from 'react-spinners'
 // import Data from '@/components/Data'
 
 const ticks = [1820,1850,1880,1910,1940,1970,2000]
@@ -88,7 +89,7 @@ export default function Game() {
       </Head>
       <main>
         <div className={styles.imageContainer}>
-          {data ?(<img className={styles.image} src={data[index].url} style={{borderImage: `url(${bg.src}) 93 92 87 92 stretch stretch`}}/>):(console.log('data NOT found'))}
+          {data ?(<img className={styles.image} src={data[index].url} style={{borderImage: `url(${bg.src}) 93 92 87 92 stretch stretch`}}/>):<PulseLoader color="maroon" />}
         </div>
         <div className={styles.sliderContainer}>
           <h3 className={styles.value}>{valueSlider}</h3>
