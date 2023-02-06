@@ -8,7 +8,8 @@ import { PulseLoader } from 'react-spinners'
 // import Data from '@/components/Data'
 
 const ticks = [1820,1850,1880,1910,1940,1970,2000]
-
+// const scoreTotal= []
+// const usedIndexes = []
 
 export default function Game() {
   const [data, setData] = useState(null);
@@ -18,11 +19,16 @@ export default function Game() {
   const [currentRound, setCurrentRound] = useState(1);
   const [yearsOf, setYearsOf] = useState(null)
   const [scoreThisRound, setScoreThisRound] = useState(null)
+  const [scoreTotal, setScoreTotal] = useState([])
+  const [usedIndexes, setUsedIndixes] = useState([])
   const sliderRef = useRef(null)
-  const usedIndexes = []
-  const dataUsed = []
   let whileCounter = 0
-  const scoreTotal= []
+
+  function resetConst(){
+    const scoreTotal= []
+    const usedIndexes = []
+  }
+
 
 //Get the data from the JSON file
   useEffect(() => {
@@ -40,7 +46,6 @@ export default function Game() {
       while(usedIndexes.includes(newIndex)){
         whileCounter += 1
         newIndex = Math.floor(Math.random()*data.length)
-        console.log('newIndex: ',newIndex)
         if (whileCounter > 100){
           alert('WHile loop popping of')
           break
@@ -48,7 +53,6 @@ export default function Game() {
       }
       setIndex(newIndex)
     };
-    console.log('indexi baby',index)
   }
   
   useEffect(() => {
@@ -57,8 +61,7 @@ export default function Game() {
 
   function makeGuess (){
     setYearsOf(Math.abs(valueSlider - data[index].year))//fires of the first useEffect
-    usedIndexes.unshift(index)
-    dataUsed.push(data[index])
+    usedIndexes.push(index)
   }
   //updates the scoreThisRound but makes sure it does not update on initial load
   useEffect(()=>{
@@ -67,6 +70,8 @@ export default function Game() {
     {formula <0 ?(score=0):score=formula}
     {yearsOf !== null && setScoreThisRound(score);}
     {yearsOf !== null && scoreTotal.push([index, score]);}
+    // {yearsOf !== null && setScoreTotal([...scoreTotal,[index,score]]);}
+    {console.log('inni listi i useeff',scoreTotal)}
   },[yearsOf])
   //updates the guessMade but makes sure to not do it onload
   useEffect(()=>{
@@ -77,7 +82,9 @@ export default function Game() {
     randIndex()
     setCurrentRound(currentRound + 1)
     setGuessMade(false)
+    console.log('score this round', scoreThisRound)
     console.log('score lista',scoreTotal)
+    console.log('used i ',usedIndexes)
     
   }
   return (
@@ -88,7 +95,7 @@ export default function Game() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
+      <main >
         <div className={styles.imageContainer}>
           {data ?(<img className={styles.image} src={data[index].url} style={{borderImage: `url(${bg.src}) 93 92 87 92 stretch stretch`}}/>):<PulseLoader color="maroon" />}
         </div>
