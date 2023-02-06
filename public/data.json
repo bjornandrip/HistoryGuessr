@@ -14,9 +14,9 @@
            },
            {
             "country": "USA",
-            "city": "Seattle",
-            "year": 1971,
-            "url": "https://www.historic-newspapers.com/wp-content/uploads/sites/6/2020/09/Original-Starbucks.jpg"
+            "city": "North Carolina",
+            "year": 1890,
+            "url": "https://i.ibb.co/tMnwNnN/52561917625-da39c4827f-o.jpg"
            },
            {
             "country": "USA",
@@ -239,6 +239,18 @@
             "city": "Stockholm",
             "year": 1880,
             "url": "https://www.boredpanda.com/blog/wp-content/uuuploads/historic-photos-colorized/historic-photos-colorized-16-1.jpg"
+           },
+           {
+            "country": "Hong Kong",
+            "city": "Hong Kong",
+            "year": 1932,
+            "url": "https://i.ibb.co/FBY94PH/43769790610-39d3c4e8ca-o.jpg"
+           },
+           {
+            "country": "South Korea",
+            "city": "Seoul",
+            "year": 1928,
+            "url": "https://i.ibb.co/F4JgXKn/51763012341-9a7e627340-o.jpg"
            }
     ]
 }
