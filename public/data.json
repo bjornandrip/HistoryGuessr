@@ -101,7 +101,93 @@
             "city": "Ritimir Pass",
             "year": 1936,
             "url": "https://collections.lib.uwm.edu/digital/api/singleitem/image/agsphoto/19264/default.jpg"
+           },
+           {
+            "country": "Kenya",
+            "city": "Nairobi",
+            "year": 1957,
+            "url": "https://collections.lib.uwm.edu/digital/api/singleitem/image/agsafrica/4304/default.jpg"
+           },
+           {
+            "country": "Egypt",
+            "city": "Giza",
+            "year": 1961,
+            "url": "https://collections.lib.uwm.edu/digital/api/singleitem/image/agsafrica/2445/default.jpg"
+           },
+           {
+            "country": "Senegal",
+            "city": "",
+            "year": 1961,
+            "url": "https://collections.lib.uwm.edu/digital/api/singleitem/image/agsafrica/6081/default.jpg"
+           },
+           {
+            "country": "Senegal",
+            "city": "",
+            "year": 1961,
+            "url": "https://collections.lib.uwm.edu/digital/api/singleitem/image/agsafrica/5373/default.jpg"
+           },
+           {
+            "country": "Democratic Republic of the Congo",
+            "city": "Kinshasa",
+            "year": 1957,
+            "url": "https://collections.lib.uwm.edu/digital/api/singleitem/image/agsafrica/3885/default.jpg"
+           },
+           {
+            "country": "South Africa",
+            "city": "Germiston",
+            "year": 1937,
+            "url": "https://collections.lib.uwm.edu/digital/api/singleitem/image/agsafrica/131/default.jpg"
+           },
+           {
+            "country": "South Africa",
+            "city": "",
+            "year": 1961,
+            "url": "https://collections.lib.uwm.edu/digital/api/singleitem/image/agsafrica/10748/default.jpg"
+           },
+           {
+            "country": "Belarus",
+            "city": "",
+            "year": 1934,
+            "url": "https://collections.lib.uwm.edu/digital/api/singleitem/image/agseurope/4473/default.jpg"
+           },
+           {
+            "country": "Belarus",
+            "city": "Pinsk",
+            "year": 1934,
+            "url": "https://collections.lib.uwm.edu/digital/api/singleitem/image/agseurope/5290/default.jpg"
+           },
+           {
+            "country": "Belarus",
+            "city": "Pinsk",
+            "year": 1934,
+            "url": "https://collections.lib.uwm.edu/digital/api/singleitem/image/agseurope/5048/default.jpg"
+           },
+           {
+            "country": "Bulgaria",
+            "city": "Sofia",
+            "year": 1969,
+            "url": "https://collections.lib.uwm.edu/digital/api/singleitem/image/agseurope/7186/default.jpg"
+           },
+           {
+            "country": "Iceland",
+            "city": "Reykjavik",
+            "year": 1943,
+            "url": "https://i.ibb.co/2nQnSSb/Photo697307591428-inner-93-261-673-285-93-749-673-742.jpg"
+           },
+           {
+            "country": "Iceland",
+            "city": "Reykjavik",
+            "year": 1941,
+            "url": "https://i.ibb.co/my4NxxS/Photo697306712315-inner-93-300-638-286-93-765-661-765-thumb2.jpg"
+           },
+           {
+            "country": "Iceland",
+            "city": "Reykjavik",
+            "year": 1944,
+            "url": "https://i.ibb.co/jgX9H3t/Photo697307737273-inner-93-143-843-155-105-682-843-682-thumb2.jpg"
            }
+           
+
 
 
     ]
